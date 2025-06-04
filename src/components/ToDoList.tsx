@@ -25,7 +25,7 @@ function ToDoList({items , visdata , setVisdata} : Props) {
          {
           items.map((item, index) => (
             !visdata[index] && 
-            <div className='flex gap-2 m-4' key={index}>
+            <div className='flex gap-2 mt-2 mb-2 bg-purple-200 rounded-xl px-3' key={index}>
               <li key={item} className='text-xl '>
                 {item}
               </li><button key={index} className='text-4xs bg-purple-300 font-semibold rounded-xl p-1 border-1 border-purple-400' onClick={() => handleClick(index)}>Close</button>
