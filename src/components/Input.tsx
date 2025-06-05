@@ -38,7 +38,7 @@ function Input({items , setItems , visdata , setVisdata}:Props){
 
   return (
     <div className='py-3 w-auto'>
-      <form onSubmit={handleAdd} className='bg-purple-400 p-0 rounded-2xl justify-center flex justify-items-center'>
+      <form onSubmit={handleAdd} className='bg-purple-400 p-0 rounded-2xl justify-center flex '>
         <label className='p-2.5 text-balance font-semibold text-4xs text-white'>
           Add task:
         <input 
@@ -48,7 +48,7 @@ function Input({items , setItems , visdata , setVisdata}:Props){
          className='border-2 rounded-xl ml-2 bg-white text-black'
         />
         </label>
-       <button type="submit" className='text-4xs bg-pink-300 w-12 h-8 rounded-2xl py-1 mt-2'>Add</button>
+       <button type="submit" className='text-4xs bg-pink-300 w-12 h-7 rounded-2xl mt-auto mb-auto text-center'>Add</button>
       </form>
     </div>
   )
