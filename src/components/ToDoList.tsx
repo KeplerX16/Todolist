@@ -19,22 +19,22 @@ function ToDoList({items , visdata , setVisdata} : Props) {
     
       <div className='flex-col justify-center '>
         {
-        !visdata.every(v => v === true) && <h2 className='w-auto text-2xl bg-purple-400 rounded-2xl p-2.5 justify-center flex text-white font-semibold'>|: - Pending tasks - :|</h2>
+        !visdata.every(v => v === true) && <h2 className='w-auto text-2xl bg-blue-400 rounded-xl p-2.5 justify-center flex text-white font-semibold'>|: - Pending tasks - :|</h2>
         }
         <ul>
          {
           items.map((item, index) => (
             !visdata[index] && 
-            <div className='flex gap-2 mt-2 mb-2 bg-purple-200 rounded-xl px-3' key={index}>
+            <div className='flex gap-2 mt-1 mb-1 bg-blue-200 rounded-xl px-3' key={index}>
               <li key={item} className='text-xl '>
                 {item}
-              </li><button key={index} className='text-4xs bg-purple-300 font-semibold rounded-xl p-1 border-1 border-purple-400' onClick={() => handleClick(index)}>Close</button>
+              </li><button key={index} className='text-4xs bg-blue-300 font-semibold rounded-lg p-1 border-1 border-blue-400 h-8 text-white' onClick={() => handleClick(index)}>Close</button>
             </div>
           ))
           }
         </ul>
         {visdata.every(v => v === true) && <h2 className='m-4 text-2xl font-semibold mt-2'>All tasks are Completed</h2>}
-        <h2 className='w-auto text-2xl bg-purple-400 rounded-2xl p-2.5 justify-center flex text-white font-semibold'>|: - Completed tasks - :|</h2>
+        <h2 className='w-auto text-2xl bg-blue-400 rounded-xl p-2.5 justify-center flex text-white font-semibold'>|: - Completed tasks - :|</h2>
         <ul>
         {items.map((item, index) => (
             visdata[index] && 

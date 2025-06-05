@@ -28,8 +28,8 @@ function App() {
 
   return (
     <>
-      <div className='bg-purple-100 max-h-screen max-w-screen w-screen h-screen'>
-        <h1 className='text-2xl bg-purple-300 w-screen p-4 justify-center font-bold flex'>To-do List</h1>
+      <div className='bg-blue-100 max-h-screen max-w-screen w-screen h-screen'>
+        <h1 className='text-2xl bg-blue-300 w-screen p-4 justify-center font-bold flex text-white'>To-do List</h1>
         <div className='flex-col gap-2 p-10'>
         <Input setItems={setItems} items={items} setVisdata={setVisdata} visdata={visdata} />
         <ToDoList items={items} visdata={visdata} setVisdata={setVisdata}/>
